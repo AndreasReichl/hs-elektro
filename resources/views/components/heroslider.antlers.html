@@ -1,0 +1,35 @@
+<div class="swiper homeslider">
+    <div class="swiper-wrapper">
+		{{ sliderentrys }}
+		<div class="swiper-slide slideParagraph">
+			<div class="textMediabox">
+				{{ slider_image }}
+				<div class="mediabox">
+					<img src="{{ url }}" alt="{{ alt }}">
+				</div>
+				{{ /slider_image }}
+				<div class="textbox">
+					{{ if slider_title }}<h2 class="headline" style="color: {{ headline_color }};">{{ slider_title }}</h2>{{ /if }}
+					{{ if slider_subtitle }}<h3 class="subtitle" style="color: {{ subtitle_color }};">{{ slider_subtitle }}</h3>{{ /if }}
+					{{ if slider_content }}<div class="content" style="color: {{ content_color }};">{{ slider_content }}</div>{{ /if }}
+					<div>
+						{{ links }}
+							{{ partial:elements/button
+								:url='button_link_feld'
+								:style='button_style'
+								:target='button_zielseite'
+								:icon='button_icon'
+								:text='button_text'
+							}}
+						{{ /links }}
+					</div>
+				</div>
+			</div>
+		</div>
+		{{ /sliderentrys }}
+	</div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+	<div class="swiper-pagination"></div>
+</div>

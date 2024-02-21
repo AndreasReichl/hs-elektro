@@ -1,12 +1,4 @@
 name: 'Heiko Schwindl'
 super: true
-id: ac01ea1e-a668-4948-a0f3-18a96295511d
-password_hash: $2y$10$S5L7u1ST6alPMrb2SzGDOOhmCWdOPflSUgS4enXi7oc155mMpBBoq
-preferences:
-  collections:
-    pages:
-      columns:
-        - title
-        - slug
-        - author
-        - status
+id: 5637ed09-bb88-4616-9d5b-1e4f7652b74b
+password_hash: $2y$10$xVMS/M7ePyCMhQzuyXmSZ.vX4k7pMJ19ehNnPe6SlnhUkacpIEs2G
