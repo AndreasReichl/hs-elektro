@@ -1,1 +1,11 @@
-{{ content }}
+{{ if sliderentrys }}
+	{{ partial:components/heroslider }}
+{{ /if }}
+{{ if hero_info || hero_image || hero_title || hero_subtitle }}
+	{{ partial:components/hero }}
+{{ /if }}
+{{ if absaetze }}
+	{{ absaetze }}
+		{{ partial:{layout.key} }}
+	{{ /absaetze }}
+{{ /if }}

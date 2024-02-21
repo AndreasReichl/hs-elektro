@@ -1,0 +1,206 @@
+tabs:
+  main:
+    display: Hauptteil
+    sections:
+      -
+        display: Sliderentrys
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+              instructions: 'Dient nur als Name des Eintrags und wird nicht angezeigt.'
+          -
+            handle: slider_title
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Slider title'
+              width: 75
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+              instructions: 'Überschrift des Eintrags'
+          -
+            handle: headline_color
+            field:
+              swatches:
+                - '#ffffff'
+                - '#001F71'
+                - '#83AB00'
+                - '#1F232E'
+              allow_any: true
+              type: color
+              display: 'Headline color'
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: slider_subtitle
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Slider subtitle'
+              width: 75
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              instructions: 'Unterüberschrift des Eintrags'
+          -
+            handle: subtitle_color
+            field:
+              swatches:
+                - '#ffffff'
+                - '#001F71'
+                - '#83AB00'
+                - '#1F232E'
+              allow_any: true
+              type: color
+              display: 'Subtitle color'
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: slider_content
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+                - underline
+                - alignleft
+                - aligncenter
+                - alignright
+                - alignjustify
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Slider content'
+              width: 75
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              instructions: 'Infobereich des Eintrags'
+          -
+            handle: content_color
+            field:
+              swatches:
+                - '#ffffff'
+                - '#001F71'
+                - '#83AB00'
+                - '#1F232E'
+              allow_any: true
+              type: color
+              display: 'Content color'
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: slider_image
+            field:
+              max_files: 1
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Slider image'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: links
+            field:
+              collapse: false
+              previews: true
+              fullscreen: true
+              sets:
+                neue_set-gruppe:
+                  display: 'Neue Set-Gruppe'
+                  instructions: null
+                  icon: null
+                  sets:
+                    links:
+                      display: Linklist
+                      instructions: null
+                      icon: link
+                      fields:
+                        -
+                          import: buttonstyles
+                          prefix: button_
+              type: replicator
+              display: Links
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+title: Homeslider
