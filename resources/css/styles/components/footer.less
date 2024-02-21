@@ -1,0 +1,21 @@
+// out: false
+.component_footer 			{ overflow:hidden; position: relative;
+	.iconLogo 				{ position: relative; width:15vw; min-width:200px; height:auto; margin:0px auto; line-height: 0;
+		svg 				{
+			.st0 			{ fill:var(--secondary-color); }
+			.st1 			{ fill:var(--primary-color); }
+		}
+		img 				{ position:absolute; top:50%; left:50%; .translate(-50%,-50%); width:3vw; min-width:40px; height:auto; }
+	}
+	.footerNavWrapper 		{ color:var(--white); background-color:var(--secondary-color); }
+	.footerNav 				{ .flex-display(flex); .flex-wrap(wrap); .justify-content(center); gap:15px; padding:30px 0;
+		@media (min-width: @screen-md-min)	{ gap:30px; padding:60px 0; }
+	}
+	.footerMainmenu 		{ font-weight: bold; text-transform: uppercase; font-size:12px; }
+}
+
+.socialLinks 	{ .flex-display(flex); .align-items(center); .justify-content(center); margin:15px 0; gap:15px; font-size: 24px;
+	@media (min-width: @screen-md-min)	{ position: fixed; z-index: 999; top:30px; right:5vw; margin:0;
+		i 	{ font-size:28px; }
+	}
+}

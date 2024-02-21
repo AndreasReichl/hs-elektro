@@ -1,0 +1,31 @@
+<footer class="component_footer">
+	<div class="iconLogo">
+		<?xml version="1.0" encoding="utf-8"?>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 331.3 80.5" style="enable-background:new 0 0 331.3 80.5;" xml:space="preserve">
+			<g>
+				<path class="st0" d="M325.5,80.4l-16.8-0.1c-0.9,0-1.8,0-2.7,0C239.7,79.4,225.9,0,170.7,0l-5.1,0h0h0l-5.1,0
+					c-55.1,0-69,79.4-135.2,80.3c-0.9,0-1.8,0-2.7,0L5.8,80.4l-5.8,0l0,0h165.7h165.7l0,0L325.5,80.4z"/>
+				<path class="st1" d="M306,80.3c0.9,0,1.8,0,2.7,0l16.8,0.1C249.6,79,234.3,0,185.1,0l0,0h-19.5l0,0l5.1,0
+					C225.9,0,239.7,79.4,306,80.3z"/>
+				<path class="st1" d="M25.4,80.3C91.6,79.4,105.5,0,160.6,0l5.1,0l0,0h-19.5l0,0C97,0,81.7,79,5.8,80.4l16.8-0.1
+					C23.6,80.3,24.5,80.3,25.4,80.3z"/>
+			</g>
+		</svg>
+		<img src="{{ sitebasics.logo_icon.url }}" alt="{{ sitebasics.logo_icon.alt }}" />
+	</div>
+	<div class="footerNavWrapper">
+		<div class="footerNav">
+			{{ nav:footernav }}
+				<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+			{{ /nav:footernav }}
+		</div>
+		<div class="socialLinks">
+			{{ if sitebasics.instagram }}<a href="{{ sitebasics.instagram }}" class="socialLink instagram" target="_blank"><i class="icofont-instagram"></i></a>{{ /if }}
+			{{ if sitebasics.facebook }}<a href="{{ sitebasics.facebook }}" class="socialLink facebook" target="_blank"><i class="icofont-facebook"></i></a>{{ /if }}
+			{{ if sitebasics.youtube }}<a href="{{ sitebasics.youtube }}" class="socialLink youtube" target="_blank"><i class="icofont-youtube"></i></a>{{ /if }}
+			{{ if sitebasics.twitter }}<a href="{{ sitebasics.twitter }}" class="socialLink twitter" target="_blank"><i class="icofont-twitter"></i></a>{{ /if }}
+			{{ if sitebasics.tiktok }}<a href="{{ sitebasics.tiktok }}" class="socialLink tiktok" target="_blank"><i class="icofont-tiktok"></i></a>{{ /if }}
+		</div>
+	</div>
+
+</footer>
