@@ -4,3 +4,33 @@ data:
   logo_icon: sitebasics/logoicon.svg
   favicon: sitebasics/logoicon.svg
   apple_touch_icon: sitebasics/apple-touch-icon.png
+  logo_footer: sitebasics/hs-elektro-logo.svg
+  firma: 'HS Elektro'
+  vorname: Heiko
+  nachname: Schwindl
+  position: Elektrotechnikermeister
+  icon_strasse: icon_street
+  strasse_hausnummer: 'Oed 1'
+  plz: '92665'
+  ort: Kirchendemenreuth
+  icon_mobile: icon_phone
+  mobile: '+49 160 / 667 29 66'
+  icon_email: icon_mail
+  email: info@hs-elektro.com
+  website: 'https://www.hs-elektro.com'
+  oberueberschrift: 'Teilen Sie Ihre Erfahrung mit uns.'
+  ueberschrift: 'Wir freuen uns über Ihre Bewertung!'
+  info:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Ihre Zufriedenheit ist unser größtes Anliegen! Wenn Sie mit unserer Beratung und Installation zufrieden waren, teilen Sie doch bitte Ihre Erfahrung mit anderen. Eine positive Googlebewertung würde uns nicht nur freuen, sondern hilft auch anderen, die richtige Entscheidung zu treffen. Vielen Dank für Ihre Unterstützung auf unserem Weg zu exzellentem Service!'
+  footer_links:
+    -
+      id: ltielexh
+      footer_text: 'Jetzt bewerten'
+      footer_style: primary
+      footer_zielseite: _self
+      footer_link_feld: 'https://www.google.com/'

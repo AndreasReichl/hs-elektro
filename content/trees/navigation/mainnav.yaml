@@ -1,1 +1,21 @@
-{  }
+tree:
+  -
+    id: fc91450b-d090-4568-9527-50eb3b510479
+    title: Photovoltaikanlagen
+    url: /photovoltaikanlagen
+  -
+    id: e402a675-9497-426a-9a34-a64be64b9b8b
+    title: Speichersysteme
+    url: /speichersysteme
+  -
+    id: cbdd7dbf-dad0-4b85-aebc-c48692ccdcf9
+    title: Ladestationen
+    url: /ladestationen
+  -
+    id: 405d0d97-e4a5-439e-9e83-2ee5f93a598a
+    title: Elektroinstallation
+    url: /elektroinstallation
+  -
+    id: 555b8d50-50b7-4b19-8225-faabf447b440
+    title: Balkonkraftwerke
+    url: /balkonkraftwerke

@@ -14,10 +14,73 @@
 		<img src="{{ sitebasics.logo_icon.url }}" alt="{{ sitebasics.logo_icon.alt }}" />
 	</div>
 	<div class="footerNavWrapper">
-		<div class="footerNav">
-			{{ nav:footernav }}
-				<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
-			{{ /nav:footernav }}
+
+		<div class="footerInfoblock">
+			{{ if sitebasics.oberueberschrift }}<h4>{{ sitebasics.oberueberschrift }}</h4>{{ /if }}
+			{{ if sitebasics.ueberschrift }}<h2>{{ sitebasics.ueberschrift }}</h2>{{ /if }}
+			{{ if sitebasics.untertitel }}<h3>{{ sitebasics.untertitel }}</h3>{{ /if }}
+			{{ if sitebasics.info }}
+			<div class="infoContent">
+				{{ sitebasics.info }}
+			</div>
+			{{ /if }}
+			{{ if sitebasics.footer_links }}
+			<div class="footerLinks">
+				{{ sitebasics.footer_links }}
+					{{ partial:elements/button
+						:url='footer_link_feld'
+						:style='footer_style'
+						:target='footer_zielseite'
+						:icon='footer_icon'
+						:text='footer_text'
+					}}
+				{{ /sitebasics.footer_links }}
+			</div>
+			{{ /if }}
+		</div>
+
+		<div class="footerInner">
+			<div class="footerAddress">
+				{{ if sitebasics.logo_footer }}
+				<div class="footerLogo">
+					<img src="{{ sitebasics.logo_footer.url }}" alt="{{ sitebasics.logo_footer.alt }}" />
+				</div>
+				{{ /if }}
+				<address>
+					{{ if sitebasics.strasse_hausnummer }}
+					<div class="addressEntry streetNumber">
+						{{ if sitebasics.icon_strasse }}<span class="icon">{{ sitebasics.icon_strasse }}</span>{{ /if }}
+						<span class="label">
+							{{ sitebasics.strasse_hausnummer }}
+							/ {{ sitebasics.plz }} {{ sitebasics.ort }}
+						</span>
+					</div>
+					{{ /if }}
+					{{ if sitebasics.phone }}
+					<div class="addressEntry phone">
+						{{ if sitebasics.icon_phone }}<span class="icon">{{ sitebasics.icon_phone }}</span>{{ /if }}
+						<span class="label">{{ sitebasics.phone }}</span>
+					</div>
+					{{ /if }}
+					{{ if sitebasics.mobile }}
+					<div class="addressEntry mobile">
+						{{ if sitebasics.icon_mobile }}<span class="icon">{{ sitebasics.icon_mobile }}</span>{{ /if }}
+						<span class="label">{{ sitebasics.mobile }}</span>
+					</div>
+					{{ /if }}
+					{{ if sitebasics.email }}
+					<div class="addressEntry email">
+						{{ if sitebasics.icon_email }}<span class="icon">{{ sitebasics.icon_email}}</span>{{ /if }}
+						<span class="label">{{ sitebasics.email }}</span>
+					</div>
+					{{ /if }}
+				</address>
+			</div>
+			<div class="footerNav">
+				{{ nav:footernav }}
+					<a href="{{ url }}" class="footerMainmenu">{{ title }}</a>
+				{{ /nav:footernav }}
+			</div>
 		</div>
 		<div class="socialLinks">
 			{{ if sitebasics.instagram }}<a href="{{ sitebasics.instagram }}" class="socialLink instagram" target="_blank"><i class="icofont-instagram"></i></a>{{ /if }}

@@ -17,7 +17,6 @@ tabs:
               show_set_alt: true
               type: assets
               display: Logo
-              icon: assets
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -37,7 +36,6 @@ tabs:
               show_set_alt: true
               type: assets
               display: 'Logo Icon'
-              icon: assets
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -57,7 +55,6 @@ tabs:
               show_set_alt: true
               type: assets
               display: favicon
-              icon: assets
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -77,7 +74,6 @@ tabs:
               show_set_alt: true
               type: assets
               display: 'Apple touch icon'
-              icon: assets
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -85,6 +81,251 @@ tabs:
               hide_display: false
               folder: sitebasics
               width: 50
+          -
+            handle: logo_footer
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Logo Footer'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              folder: sitebasics
+              width: 50
+      -
+        display: Firmenadresse
+        instructions: 'Unternehmensadresse für Kontakt, Impressum etc.'
+        fields:
+          -
+            handle: firma
+            field:
+              type: text
+              display: Firma
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: anrede
+            field:
+              options:
+                herr: Herr
+                frau: Frau
+                divers: Divers
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              type: select
+              display: Anrede
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 33
+          -
+            handle: vorname
+            field:
+              type: text
+              width: 33
+              display: Vorname
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: nachname
+            field:
+              type: text
+              width: 33
+              display: Nachname
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: position
+            field:
+              type: text
+              display: Position
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: icon_strasse
+            field:
+              directory: resources/assets/icons
+              type: icon
+              display: 'Icon Strasse'
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: strasse_hausnummer
+            field:
+              type: text
+              display: 'Strasse / Hausnummer'
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+              width: 66
+          -
+            handle: plz
+            field:
+              type: text
+              width: 33
+              display: PLZ
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: ort
+            field:
+              type: text
+              width: 66
+              display: Ort
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: icon_phone
+            field:
+              directory: resources/assets/icons
+              type: icon
+              display: 'Icon Telefon'
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: phone
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Phone
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 66
+          -
+            handle: icon_mobile
+            field:
+              directory: resources/assets/icons
+              type: icon
+              display: 'Icon Mobil'
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: mobile
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Mobil
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 66
+          -
+            handle: icon_email
+            field:
+              directory: resources/assets/icons
+              type: icon
+              display: 'Icon Email'
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: email
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Email
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 66
+          -
+            handle: icon_website
+            field:
+              directory: resources/assets/icons
+              type: icon
+              display: 'Icon Website'
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: website
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Website
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              width: 66
       -
         display: 'Social Links'
         instructions: 'Socialnetwork Links'
@@ -94,7 +335,6 @@ tabs:
             field:
               type: link
               display: Instagram
-              icon: link
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -105,7 +345,6 @@ tabs:
             field:
               type: link
               display: facebook
-              icon: link
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -116,7 +355,6 @@ tabs:
             field:
               type: link
               display: youtube
-              icon: link
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -127,7 +365,6 @@ tabs:
             field:
               type: link
               display: twitter
-              icon: link
               listable: hidden
               instructions_position: above
               visibility: visible
@@ -138,7 +375,103 @@ tabs:
             field:
               type: link
               display: tiktok
-              icon: link
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+      -
+        display: 'Footer Info Block'
+        instructions: 'Textbereich der auf jeder Seite im Footer angezeigt wird.'
+        fields:
+          -
+            handle: oberueberschrift
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Oberüberschrift
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: ueberschrift
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Überschrift
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: untertitel
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Untertitel
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: info
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: Info
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
+            handle: footer_links
+            field:
+              fields:
+                -
+                  import: buttonstyles
+                  prefix: footer_
+              mode: stacked
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: 'Footer Links'
               listable: hidden
               instructions_position: above
               visibility: visible

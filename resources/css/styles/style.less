@@ -26,10 +26,10 @@
 
 /* CORE SETTINGS */
 html 	        { padding:0; margin:0; font-family: var(--fontFamily); scroll-behavior:smooth; overflow-x: hidden; position:relative; min-height:100%; height:auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-body 	        { padding:0; margin:0; font-family: var(--fontFamily); min-height:100%; height:auto; line-height:1; font-size: clamp(16px,1.2vw,18px); }
+body 	        { padding:0; margin:0; font-family: var(--fontFamily); min-height:100%; height:auto; line-height:1; font-size: clamp(14px,1.2vw,16px); }
 main 	        { display: block; }
-h1 		        { text-transform: uppercase; padding:0; margin:0; font-size: clamp(36px, 3.5vw, 66px); font-weight:bold; }
-h2 		        { text-transform: uppercase; padding:0; margin:0; font-size: clamp(24px, 2.5vw, 36px); font-weight:bold; }
+h1 		        { text-transform: uppercase; padding:0; margin:0; font-size: clamp(36px, 3.5vw, 66px); font-weight:900; }
+h2 		        { text-transform: uppercase; padding:0; margin:0; font-size: clamp(24px, 2.5vw, 36px); font-weight:900; }
 h3 		        { padding:0; margin:0; font-size: clamp(18px, 2.0vw, 24px); font-weight:bold; }
 h4 		        { padding:0; margin:0; font-size: clamp(14px, 1.2vw, 18px); font-weight:bold; }
 h5 		        { padding:0; margin:0; font-size: clamp(12px, 0.8vw, 16px); font-weight:normal; }
@@ -104,7 +104,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0b0b",endCo
 
 
 /* on scroll */
-.headerBg 	{ position: fixed; top:-240px; height:200px; .bgGradientHeader; z-index:2; left:0; right:0; .opacity(0); .transition-smooth; }
+.headerBg 	{ position: fixed; top:-240px; height:60px; background-color:var(--font-color); z-index:2; left:0; right:0; .opacity(0); .transition-smooth;
+	@media (min-width: @screen-md-min)	{ height: 120px; }
+}
 .scrolled {
 	.headerBg { top:0; .opacity(1); }
 }

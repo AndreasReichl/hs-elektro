@@ -1,1 +1,13 @@
-{  }
+tree:
+  -
+    id: 88e394e1-8403-41d1-9c2c-b30be1ffa582
+    title: Kontakt
+    url: /kontakt
+  -
+    id: 3d9addcf-e655-49dc-b679-2a9a6ca51cfc
+    title: Impressum
+    url: /impressum
+  -
+    id: d279cb86-d090-4ea7-9e97-17098a216360
+    title: Datenschutz
+    url: /datenschutz
