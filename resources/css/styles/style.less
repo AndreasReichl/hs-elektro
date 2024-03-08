@@ -95,17 +95,10 @@ ul  { margin:0; padding:0;
 	box-shadow: rgb(12, 12, 13) 0px 20px 30px -10px;
 }
 
-.bgGradientHeader { background: rgb(11,11,11);
-background: -moz-linear-gradient(180deg, rgba(11,11,11,1) 50%, rgba(11,11,11,0) 100%);
-background: -webkit-linear-gradient(180deg, rgba(11,11,11,1) 50%, rgba(11,11,11,0) 100%);
-background: linear-gradient(180deg, rgba(11,11,11,1) 50%, rgba(11,11,11,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0b0b",endColorstr="#0b0b0b",GradientType=1);
-}
-
 
 /* on scroll */
-.headerBg 	{ position: fixed; top:-240px; height:60px; background-color:var(--font-color); z-index:2; left:0; right:0; .opacity(0); .transition-smooth;
-	@media (min-width: @screen-md-min)	{ height: 120px; }
+.headerBg 	{ position: fixed; top:-240px; height:60px; .bg-secondary; border-bottom:4px solid var(--primary-color); z-index:2; left:0; right:0; .opacity(0); .transition-smooth;
+	@media (min-width: @screen-md-min)	{ height: 90px; }
 }
 .scrolled {
 	.headerBg { top:0; .opacity(1); }

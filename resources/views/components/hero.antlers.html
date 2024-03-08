@@ -1,25 +1,31 @@
-<hero class="hero">
-	{{ hero_image }}
-	<div class="heroMedia">
-		<img src="{{ url }}" alt="{{ alt }}">
-	</div>
-	{{ /hero_image }}
-	<div class="heroContent">
-		{{ if hero_title }}<h1>{{ hero_title }}</h1>{{ /if }}
-		{{ if hero_subtitle }}<h3>{{ hero_subtitle }}</h3>{{ /if }}
-		{{ if hero_info }}<p>{{ hero_info }} </p>{{ /if }}
-		{{ if hero_links }}
-		<div>
-			{{ hero_links }}
-				{{ partial:elements/button
-					:url='hero_link_feld'
-					:style='hero_style'
-					:target='hero_zielseite'
-					:icon='hero_icon'
-					:text='hero_text'
-				}}
-			{{ /hero_links }}
+{{ if sliderentrys }}
+	{{ partial:components/heroslider }}
+{{ elseif hero_info || hero_image || hero_title || hero_subtitle }}
+	<div class="hero">
+		{{ hero_image }}
+		<div class="heroMedia">
+			<img src="{{ url }}" alt="{{ alt }}">
 		</div>
-		{{ /if }}
+		{{ /hero_image }}
+		<div class="heroContent">
+			{{ if hero_title }}<h1>{{ hero_title }}</h1>{{ /if }}
+			{{ if hero_subtitle }}<h3>{{ hero_subtitle }}</h3>{{ /if }}
+			{{ if hero_info }}<p>{{ hero_info }} </p>{{ /if }}
+			{{ if hero_links }}
+			<div>
+				{{ hero_links }}
+					{{ partial:elements/button
+						:url='hero_link_feld'
+						:style='hero_style'
+						:target='hero_zielseite'
+						:icon='hero_icon'
+						:text='hero_text'
+					}}
+				{{ /hero_links }}
+			</div>
+			{{ /if }}
+		</div>
 	</div>
-</hero>
+{{ else }}
+<div class="headerSpacer"></div>
+{{ /if }}

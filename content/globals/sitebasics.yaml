@@ -1,6 +1,7 @@
 title: sitebasics
 data:
-  logo: sitebasics/hs-elektro-logo.svg
+  logo: sitebasics/hs-elektro_logo_4c_positiv_quer.svg
+  logo_negative: sitebasics/hs-elektro-logo.svg
   logo_icon: sitebasics/logoicon.svg
   favicon: sitebasics/logoicon.svg
   apple_touch_icon: sitebasics/apple-touch-icon.png

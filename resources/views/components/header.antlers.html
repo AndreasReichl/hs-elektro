@@ -1,6 +1,3 @@
-<a href="/" class="logoMain">
-	<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" />
-</a>
 <a href="/" class="logoIcon">
 	<img src="{{ sitebasics.logo_icon.url }}" alt="{{ sitebasics.logo_icon.alt }}" />
 </a>
@@ -9,7 +6,13 @@
 	<span class="burgerClose"><i class="icofont-close"></i></span>
 </div>
 <div class="mainnav">
+	<a href="/" class="logoMain">
+		<img src="{{ sitebasics.logo.url }}" alt="{{ sitebasics.logo.alt }}" class="logoPositiv" />
+		<img src="{{ sitebasics.logo_negative.url }}" alt="{{ sitebasics.logo_negative.alt }}" class="logoNegativ" />
+	</a>
+	<div class="nav">
 	{{ nav:mainnav }}
 		<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
 	{{ /nav:mainnav }}
+	</div>
 </div>
