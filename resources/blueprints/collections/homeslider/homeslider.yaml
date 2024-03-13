@@ -21,6 +21,39 @@ tabs:
               hide_display: false
               instructions: 'Dient nur als Name des Eintrags und wird nicht angezeigt.'
           -
+            handle: slider_abovetitle
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: 'Oberüberschrift Slider'
+              width: 75
+              listable: hidden
+              instructions_position: below
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+              instructions: 'Oberüberschrift des Eintrags'
+          -
+            handle: aboveheadline_color
+            field:
+              swatches:
+                - '#ffffff'
+                - '#001F71'
+                - '#83AB00'
+                - '#1F232E'
+              allow_any: true
+              type: color
+              display: 'Oberüberschrift Farbe'
+              width: 25
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: slider_title
             field:
               input_type: text
@@ -29,7 +62,7 @@ tabs:
               display: 'Slider title'
               width: 75
               listable: hidden
-              instructions_position: above
+              instructions_position: below
               visibility: visible
               replicator_preview: true
               hide_display: false
@@ -62,7 +95,7 @@ tabs:
               display: 'Slider subtitle'
               width: 75
               listable: hidden
-              instructions_position: above
+              instructions_position: below
               visibility: visible
               replicator_preview: true
               hide_display: false
@@ -126,7 +159,7 @@ tabs:
               display: 'Slider content'
               width: 75
               listable: hidden
-              instructions_position: above
+              instructions_position: below
               visibility: visible
               replicator_preview: true
               hide_display: false

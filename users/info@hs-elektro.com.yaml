@@ -11,3 +11,11 @@ preferences:
         children:
           'content::collections::pages': '@inherit'
           'content::collections::homeslider': '@inherit'
+  collections:
+    homeslider:
+      columns:
+        - title
+        - slug
+        - status
+    pages:
+      after_save: continue_editing

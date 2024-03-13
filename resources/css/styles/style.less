@@ -58,21 +58,46 @@ ul  { margin:0; padding:0;
 
 
 // Slider
-.homeslider { height:40vw; margin:90px 5vw; }
-.herogallery { height:100%; }
+.homeslider 		{ height:auto; width:100%; margin:0px; }
+.herogallery 		{ height:100%; }
+.swiperOverlay 		{ position: absolute; z-index:2; top:0; left:0; right:0; bottom:0; .gradientBgBlack; }
 .slideParagraph 	{ width:100%; height:100%; .flex-display(flex);
 	.textMediabox 	{ position: relative; height:100%; width:100%; }
-	.mediabox 		{ .flex-display(flex); width:100%; height:100%;
+	.mediabox 		{ .flex-display(flex); width:100%; height:auto;
 		img 		{ object-fit: cover; }
+		@media (max-width: @screen-sm-max)	{ aspect-ratio:4/3; }
+		@media (min-width: @screen-md-min)	{ aspect-ratio:3/1; }
 	}
-	.textbox 		{ position: absolute; left:8vw; top:50%; .translateY(-50%); width: 50vw; max-width: 900px; }
-	.headline 		{ margin-bottom:15px; font-size: clamp(30px,3vw,60px); }
-	.subtitle 		{ margin-bottom:15px; }
-	.content 		{ line-height: 1.6; margin:15px 0;}
-}
+	.textbox 		{ position: absolute; z-index:3; left:50%; top:50%; .translate(-50%,-50%); width:auto; max-width: 900px; text-align:center; }
+	.aboveheadline 	{ .textshadow; }
+	.headline 		{ .textshadow; margin-bottom:15px; }
+	.subtitle 		{ .textshadow; margin-bottom:15px; }
+	.content 		{ .textshadow; line-height: 1.6; margin:15px 0;}
 
-.swiper-button-prev,
-.swiper-button-next { color:var(--primary-color); }
+	@media (min-width: @screen-sm-min)	{
+		.headline 		{ font-size: clamp(30px,6vw,60px); }
+	}
+}
+.swiper-buttons 		{ position: absolute; bottom:-1px; z-index:4; width:15vw; min-width:200px; height:auto; left:50%; .translateX(-50%); line-height: 0; .flex-display(flex); .align-items(center); .justify-content(center);
+	svg 				{
+		.st0 			{ fill:var(--white); }
+		.st1 			{ fill:var(--primary-color); }
+	}
+	.swiper-button-prev,
+	.swiper-button-next { position: absolute; top:50%; color:var(--secondary-color);
+		&:after 		{ font-size:16px; }
+	}
+	.swiper-button-prev { left:35%; }
+	.swiper-button-next { right:35%; }
+	.swiper-button-divider { position: absolute; left:50%; .translateX(-50%); width:2px; height:24px; background-color:var(--primary-color); }
+	@media (min-width: @screen-md-min)	{
+		.swiper-button-prev,
+		.swiper-button-next {
+			&:after 		{ font-size:20px; }
+		}
+		.swiper-button-divider { height:30px; }
+	}
+}
 
 .swiper-pagination-bullet-active { background:var(--primary-color); }
 

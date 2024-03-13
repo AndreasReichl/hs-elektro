@@ -5,6 +5,44 @@ tabs:
       -
         fields:
           -
+            handle: abovetitle
+            field:
+              type: text
+              width: 66
+              display: Oberüberschrift
+              instructions_position: above
+              listable: hidden
+              visibility: visible
+              replicator_preview: true
+              input_type: text
+              antlers: false
+              hide_display: false
+          -
+            handle: abovetitle_type
+            field:
+              options:
+                h1: null
+                h2: null
+                h3: null
+                h4: null
+                h5: null
+                h6: null
+              taggable: false
+              push_tags: false
+              multiple: false
+              clearable: false
+              searchable: true
+              cast_booleans: false
+              default: h2
+              type: select
+              display: 'Oberüberschrift Type'
+              width: 33
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: title
             field:
               type: text

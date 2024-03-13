@@ -1,6 +1,17 @@
 // out:false
 
-.paragraph  		{
+
+.textboxLine 	{ height:3px; width:3vw; min-width:50px; background-color:var(--primary-color); margin-bottom:15px; }
+
+.paragraph  		{ padding:60px 0;
+	&.align-center 	{ text-align: center;
+		.textboxLine 	{ margin:0px auto 15px auto; }
+	}
+	.mediabox 		{ .flex-display(flex); }
+	.textbox 		{
+		.inner 		{ .flex-display(flex); .flex-direction(column); gap:10px; padding:30px; }
+	}
+	h4 				{ color:var(--primary-color); }
 	.headline,
 	.subtitle 	 	{ margin-bottom:20px; }
 	.content 		{ margin-bottom:20px; line-height: 1.4; }
@@ -8,20 +19,35 @@
 	@media (max-width: @screen-sm-max)	{
 		.textMediabox { padding: 0 5vw; }
 	}
+
+	@media (min-width: @screen-md-min) 	{ padding:90px 0;
+		.textbox 		{
+			.inner 		{ padding:30px 60px; }
+		}
+	}
+}
+
+.paragraph0 	{ margin:0px auto; max-width:90vw;
+	@media (min-width: @screen-md-min) 	{ max-width:60vw;
+	}
 }
 
 .paragraph1 {
 	@media (min-width: @screen-md-min) 	{
-		.textMediabox { .flex-display(flex); }
-		.mediabox { width:50%; }
-		.textbox { width:50%; }
+		.textMediabox 	{ .flex-display(flex); }
+		.mediabox 		{ width:50%; .flex-size(1);
+			img 		{ object-fit: cover; }
+		}
+		.textbox 		{ width:50%; }
 	}
 }
 
 .paragraph2 {
 	@media (min-width: @screen-md-min) 	{
-		.textMediabox { .flex-display(flex); }
-		.mediabox { width:50%; }
-		.textbox { width:50%; }
+		.textMediabox 	{ .flex-display(flex); }
+		.mediabox 		{ width:50%; .flex-size(1);
+			img 		{ object-fit: cover; }
+		}
+		.textbox 		{ width:50%; }
 	}
 }

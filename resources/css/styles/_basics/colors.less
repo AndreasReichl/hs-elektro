@@ -56,11 +56,12 @@
 
 body            { color:var(--font-color); background-color:var(--bg-color); }
 .texthighlite   { background-color:var(--texthighlight-color); }
+.textshadow     { text-shadow: var(--black) 1px 0 10px; }
 
 .gradientBgBlack {
-    background: rgb(0,0,0);
-background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
-background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    background: rgb(31,35,46);
+    background: -moz-linear-gradient(180deg, rgba(31,35,46,1) 0%, rgba(255,255,255,0) 70%);
+    background: -webkit-linear-gradient(180deg, rgba(31,35,46,1) 0%, rgba(255,255,255,0) 70%);
+    background: linear-gradient(180deg, rgba(31,35,46,1) 0%, rgba(255,255,255,0) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1f232e",endColorstr="#ffffff",GradientType=1);
 }

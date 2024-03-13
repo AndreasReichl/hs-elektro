@@ -2,28 +2,27 @@
 	<div class="container{{ full_width ? '-fluid' : '' }}">
 		<div class="textMediabox">
 			<div class="textbox">
-				{{ if title }}<{{ headline_type }} class="headline">{{ title }}</{{ headline_type }}>{{ /if }}
-				{{ if subtitle }}<{{ subtitle_type }} class="subtitle">{{ subtitle }}</{{ subtitle_type }}>{{ /if }}
-				{{ if content }}<div class="content">{{ content }}</div>{{ /if }}
-				{{ partial:elements/videoplayer }}
-				{{ if links }}
-					<div class="links">
-						{{ links }}
-							{{ partial:elements/button
-								:url='button_link_feld'
-								:style='button_style'
-								:target='button_zielseite'
-								:icon='button_icon'
-								:text='button_text'
-							}}
-						{{ /links }}
-					</div>
-				{{ /if }}
-				{{ if events }}
-					<div class="events">
-						{{ partial:components/listings/eventlisting }}
-					</div>
-				{{ /if }}
+				<div class="inner">
+					<div class="textboxLine"></div>
+					{{ if abovetitle }}<{{ abovetitle_type }} class="abovetitle">{{ abovetitle }}</{{ abovetitle_type }}>{{ /if }}
+					{{ if title }}<{{ headline_type }} class="headline">{{ title }}</{{ headline_type }}>{{ /if }}
+					{{ if subtitle }}<{{ subtitle_type }} class="subtitle">{{ subtitle }}</{{ subtitle_type }}>{{ /if }}
+					{{ if content }}<div class="content">{{ content }}</div>{{ /if }}
+					{{ partial:elements/videoplayer }}
+					{{ if links }}
+						<div class="links">
+							{{ links }}
+								{{ partial:elements/button
+									:url='button_link_feld'
+									:style='button_style'
+									:target='button_zielseite'
+									:icon='button_icon'
+									:text='button_text'
+								}}
+							{{ /links }}
+						</div>
+					{{ /if }}
+				</div>
 			</div>
 			<div class="mediabox">
 				{{ image }}

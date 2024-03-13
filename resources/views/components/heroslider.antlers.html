@@ -2,6 +2,7 @@
     <div class="swiper-wrapper">
 		{{ sliderentrys }}
 		<div class="swiper-slide slideParagraph">
+			<div class="swiperOverlay"></div>
 			<div class="textMediabox">
 				{{ slider_image }}
 				<div class="mediabox">
@@ -9,6 +10,7 @@
 				</div>
 				{{ /slider_image }}
 				<div class="textbox">
+					{{ if slider_abovetitle }}<h4 class="aboveheadline" style="color: {{ aboveheadline_color }};">{{ slider_abovetitle }}</h4>{{ /if }}
 					{{ if slider_title }}<h2 class="headline" style="color: {{ headline_color }};">{{ slider_title }}</h2>{{ /if }}
 					{{ if slider_subtitle }}<h3 class="subtitle" style="color: {{ subtitle_color }};">{{ slider_subtitle }}</h3>{{ /if }}
 					{{ if slider_content }}<div class="content" style="color: {{ content_color }};">{{ slider_content }}</div>{{ /if }}
@@ -29,7 +31,19 @@
 		{{ /sliderentrys }}
 	</div>
 
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-	<div class="swiper-pagination"></div>
+	<div class="swiper-buttons">
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 331.3 80.5" style="enable-background:new 0 0 331.3 80.5;" xml:space="preserve">
+			<g>
+				<path class="st0" d="M325.5,80.4l-16.8-0.1c-0.9,0-1.8,0-2.7,0C239.7,79.4,225.9,0,170.7,0l-5.1,0h0h0l-5.1,0
+					c-55.1,0-69,79.4-135.2,80.3c-0.9,0-1.8,0-2.7,0L5.8,80.4l-5.8,0l0,0h165.7h165.7l0,0L325.5,80.4z"/>
+				<path class="st1" d="M306,80.3c0.9,0,1.8,0,2.7,0l16.8,0.1C249.6,79,234.3,0,185.1,0l0,0h-19.5l0,0l5.1,0
+					C225.9,0,239.7,79.4,306,80.3z"/>
+				<path class="st1" d="M25.4,80.3C91.6,79.4,105.5,0,160.6,0l5.1,0l0,0h-19.5l0,0C97,0,81.7,79,5.8,80.4l16.8-0.1
+					C23.6,80.3,24.5,80.3,25.4,80.3z"/>
+			</g>
+		</svg>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-divider"></div>
+		<div class="swiper-button-prev"></div>
+	</div>
 </div>

@@ -8,14 +8,13 @@
 .logoIcon 		{ position:fixed; top:15px; left:30px; z-index:999; .flex-display(inline-flex); width: auto; max-width: 40px; }
 @media (min-width: @screen-md-min)	{
 	.logoMain 			{ .flex-display(inline-flex); width:100%; height:auto; max-width:12vw; min-width:120px; margin-left:60px;
-		.logoPositiv	{}
-		.logoNegativ 	{ display:none; }
+		.logoPositiv 	{ display:none; }
 	}
 	.logoIcon 		{ display:none; }
 }
-.mainnav 				{ .transition-smooth; position: fixed; .flex-display(flex); .flex-direction(column); .flex-wrap(wrap); .align-items(center); padding:0; width:100%; top:-100%; z-index: 990;
+.mainnav 				{ .transition-smooth; position: fixed; .flex-display(flex); .flex-direction(column); .flex-wrap(wrap); .align-items(center); padding:0; width:100%; top:-100%; z-index: 990; color:var(--white);
 	.nav 				{ .flex-display(flex); .flex-direction(column); .flex-wrap(wrap); gap:15px; }
-	@media (max-width: @screen-sm-max)	{ gap:25px; height:100%; background-color: var(--bg-color);
+	@media (max-width: @screen-sm-max)	{ gap:25px; height:100%; background-color: var(--font-color);
 		.mainmenu 						{ font-size: clamp(24px, 2.5vw, 36px);
 			&:first-child 				{ margin-top:90px; }
 		}
@@ -35,7 +34,7 @@
 	}
 }
 
-.burgerBtn 		{ position:fixed; top:15px; right:30px; z-index:999; .transition-smooth; font-size:24px;
+.burgerBtn 		{ position:fixed; top:15px; right:30px; z-index:999; .transition-smooth; font-size:24px; color:var(--white);
 	@media (min-width: @screen-md-min)	{ top:-120px; }
 }
 
