@@ -33,7 +33,7 @@ tabs:
               clearable: false
               searchable: true
               cast_booleans: false
-              default: h2
+              default: h4
               type: select
               display: 'Oberüberschrift Type'
               width: 33
@@ -300,6 +300,7 @@ tabs:
                 components/absaetze/absatz0: 'Bild oben Text unten'
                 components/absaetze/absatz1: 'Bild links - Text rechts'
                 components/absaetze/absatz2: 'Bild rechts - Text links'
+                components/absaetze/absatz3: 'Großes Bild - Text darüber'
               taggable: false
               push_tags: false
               multiple: false

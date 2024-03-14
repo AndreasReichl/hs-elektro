@@ -63,6 +63,18 @@ tabs:
               replicator_preview: true
               hide_display: false
           -
+            handle: hero_abovetitle
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Oberüberschrift
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+          -
             handle: hero_title
             field:
               input_type: text

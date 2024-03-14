@@ -1,0 +1,45 @@
+<article id="paragraph{{ id }}" class="paragraph paragraph3 {{ paragraph_class }}">
+	<div class="container{{ full_width ? '-fluid' : '' }}">
+		<div class="textMediabox">
+			<div class="textbox">
+				<div class="inner">
+					<div class="textboxLine"></div>
+					{{ if abovetitle }}<{{ abovetitle_type }} class="abovetitle">{{ abovetitle }}</{{ abovetitle_type }}>{{ /if }}
+					{{ if title }}<{{ headline_type }} class="headline">{{ title }}</{{ headline_type }}>{{ /if }}
+					{{ if subtitle }}<{{ subtitle_type }} class="subtitle">{{ subtitle }}</{{ subtitle_type }}>{{ /if }}
+					{{ if content }}<div class="content">{{ content }}</div>{{ /if }}
+					{{ partial:elements/videoplayer }}
+					{{ if links }}
+						<div class="links">
+							{{ links }}
+								{{ partial:elements/button
+									:url='button_link_feld'
+									:style='button_style'
+									:target='button_zielseite'
+									:icon='button_icon'
+									:text='button_text'
+								}}
+							{{ /links }}
+						</div>
+					{{ /if }}
+				</div>
+			</div>
+			<div class="mediabox">
+				{{ image }}
+					<img src="{{ url }}" alt="{{ alt }}">
+				{{ /image }}
+			</div>
+		</div>
+	</div>
+
+	<div class="absatzTop">
+		<svg x="0px" y="0px" viewBox="0 0 331.3 80.5" xmlns="http://www.w3.org/2000/svg">
+		<g transform="matrix(1, 0, 0, -1, 0, 80.4000015258789)" style="">
+			<path class="st0" d="M325.5,80.4l-16.8-0.1c-0.9,0-1.8,0-2.7,0C239.7,79.4,225.9,0,170.7,0l-5.1,0h0h0l-5.1,0 c-55.1,0-69,79.4-135.2,80.3c-0.9,0-1.8,0-2.7,0L5.8,80.4l-5.8,0l0,0h165.7h165.7l0,0L325.5,80.4z"/>
+			<path class="st1" d="M306,80.3c0.9,0,1.8,0,2.7,0l16.8,0.1C249.6,79,234.3,0,185.1,0l0,0h-19.5l0,0l5.1,0 C225.9,0,239.7,79.4,306,80.3z"/>
+			<path class="st1" d="M25.4,80.3C91.6,79.4,105.5,0,160.6,0l5.1,0l0,0h-19.5l0,0C97,0,81.7,79,5.8,80.4l16.8-0.1 C23.6,80.3,24.5,80.3,25.4,80.3z"/>
+		</g>
+		</svg>
+	</div><?xml version="1.0" encoding="utf-8"?>
+
+</article>
