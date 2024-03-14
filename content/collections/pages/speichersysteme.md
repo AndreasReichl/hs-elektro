@@ -9,7 +9,7 @@ title: Speichersysteme
 author: 5637ed09-bb88-4616-9d5b-1e4f7652b74b
 template: default
 updated_by: 5637ed09-bb88-4616-9d5b-1e4f7652b74b
-updated_at: 1710426149
+updated_at: 1710426498
 absaetze:
   - 58b5c52d-1afd-439d-9d25-f6ebfdb82338
   - 51368fd3-d0ff-4e28-8a02-f309e4aa4a09
