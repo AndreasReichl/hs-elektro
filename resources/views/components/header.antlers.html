@@ -15,4 +15,9 @@
 		<a href="{{ url }}" class="mainmenu{{ if is_current}} active{{ /if }}">{{ title }}</a>
 	{{ /nav:mainnav }}
 	</div>
+	<div class="mobilNav">
+		{{ nav:mainnavmobil }}
+			<a href="{{ url }}" class="mobilMainmenu">{{ title }}</a>
+		{{ /nav:mainnavmobil }}
+	</div>
 </div>

@@ -10,7 +10,7 @@ full_width: false
 layout: components/absaetze/absatz0
 inhaltsausrichtung: left
 updated_by: 5637ed09-bb88-4616-9d5b-1e4f7652b74b
-updated_at: 1710487446
+updated_at: 1710488775
 links:
   -
     id: lts9v1qv

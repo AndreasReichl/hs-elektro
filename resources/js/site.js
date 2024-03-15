@@ -21,10 +21,10 @@ import 'swiper/css/bundle';
 
 
 const swiper = new Swiper(".homeslider", {
-	// autoplay: {
-	// 	delay: 5000,
-	// 	disableOnInteraction: false,
-	// },
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	},
 	grabCursor: true,
 	effect: "fade",
 	duration:5000,
