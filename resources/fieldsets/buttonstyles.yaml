@@ -32,6 +32,7 @@ fields:
         default: Standard
         primary: 'Firmenfarbe 1'
         secondary: 'Firmenfarbe 2'
+        base: Textlink
       taggable: false
       push_tags: false
       multiple: false

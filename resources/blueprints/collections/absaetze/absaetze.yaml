@@ -315,4 +315,21 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
+          -
+            handle: inhaltsausrichtung
+            field:
+              options:
+                left: linksbündig
+                center: zentriert
+                right: rechtsbündig
+              inline: false
+              cast_booleans: false
+              default: left
+              type: radio
+              display: Inhaltsausrichtung
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
 title: Absätze

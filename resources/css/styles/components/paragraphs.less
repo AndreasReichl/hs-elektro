@@ -3,13 +3,29 @@
 
 .textboxLine 	{ height:3px; width:3vw; min-width:50px; background-color:var(--primary-color); margin-bottom:15px; }
 
-.paragraph  		{ padding:0;
-	&.align-center 	{ text-align: center;
-		.textboxLine 	{ margin:0px auto 15px auto; }
+.paragraph  		{ position: relative; z-index:0; padding:0;
+	&.align-left 		{
+		.textboxLine 	{ margin:0 auto 15px 0; }
+	}
+	&.align-center 		{ text-align: center;
+		.textboxLine 	{ margin:0 auto 15px auto; }
+	}
+	&.align-right 		{ text-align: right;
+		.textboxLine 	{ margin:0 0 15px auto; }
 	}
 	.mediabox 		{ .flex-display(flex); }
 	.textbox 		{
 		.inner 		{ .flex-display(flex); .flex-direction(column); gap:10px; padding:30px; }
+		.content 	{
+			h2,h3,h4 { margin-bottom:15px; }
+			p 		{ margin:5px 0 15px 0; }
+			ul  	{ margin:0; padding:0;
+				>li { list-style: none; position: relative; padding: 3px 0 2px 20px; line-height: 1.6;
+					&:before { content: '•'; position: absolute; top:0px; left: 0; font-size:20px; color:var(--primary-color); }
+					p 	{ margin:0 0 5px 0; }
+				}
+			}
+		}
 	}
 	h4 				{ color:var(--primary-color); }
 	.headline,
@@ -57,7 +73,7 @@
 	}
 }
 
-.paragraph3 		{ position: relative; padding:0;
+.paragraph3 		{
 	.textMediabox 	{ position: relative; height:100%; width:100%; }
 	.mediabox 		{ .flex-display(flex); width:100%; height:auto;
 		img 		{ object-fit: cover; }
@@ -65,8 +81,8 @@
 		@media (min-width: @screen-md-min)	{ aspect-ratio:2/1; }
 	}
 	.textboxLine 	{ display:none; }
-	.textbox 		{ position: absolute; z-index:3; left:50%; top:50%; .translate(-50%,-50%); width:100%; max-width: 900px; text-align:center; color:var(--white); }
-	.absatzTop 		{ position: absolute; top:-1px; z-index:4; width:15vw; min-width:200px; height:auto; left:50%; .translateX(-50%); line-height: 0; .flex-display(flex); .align-items(center); .justify-content(center);
+	.textbox 		{ position: absolute; z-index:1; left:50%; top:50%; .translate(-50%,-50%); width:100%; max-width: 900px; text-align:center; color:var(--white); }
+	.absatzTop 		{ position: absolute; top:-1px; z-index:1; width:15vw; min-width:200px; height:auto; left:50%; .translateX(-50%); line-height: 0; .flex-display(flex); .align-items(center); .justify-content(center);
 		svg 			{
 			.st0 		{ fill:var(--white); }
 			.st1 		{ fill:var(--primary-color); }

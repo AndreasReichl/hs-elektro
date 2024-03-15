@@ -10,7 +10,8 @@ active: true
 full_width: true
 layout: components/absaetze/absatz3
 updated_by: 5637ed09-bb88-4616-9d5b-1e4f7652b74b
-updated_at: 1710418537
+updated_at: 1710481027
 abovetitle: 'Intelligente Stromerzeugung'
 paragraph_class: lastArticle
+inhaltsausrichtung: center
 ---

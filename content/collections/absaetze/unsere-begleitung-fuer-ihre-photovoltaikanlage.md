@@ -7,11 +7,11 @@ title: 'Unsere Begleitung für Ihre  Photovoltaikanlage'
 headline_type: h2
 subtitle_type: h3
 active: true
-paragraph_class: align-center
 full_width: false
 layout: components/absaetze/absatz0
 updated_by: 5637ed09-bb88-4616-9d5b-1e4f7652b74b
-updated_at: 1710408138
+updated_at: 1710480764
+inhaltsausrichtung: center
 content:
   -
     type: paragraph
