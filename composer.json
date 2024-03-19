@@ -20,6 +20,7 @@
         "statamic/cms": "^4.0",
         "stoffelio/statamic-404-logger": "^1.0",
         "takepart-media/statamic-oreos": "^1.3",
+        "teamnovu/statamic-images-missing-alt": "^1.0",
         "webographen/statamic-admin-log": "^1.0"
     },
     "require-dev": {
